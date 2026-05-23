@@ -1,8 +1,9 @@
 import express from 'express';
 import cors from 'cors';
 
-import eventRoute from './routes/eventRoute';
-import categoryRoute from './routes/categoryRoute';
+import eventRoute from './routes/eventRoute.js';
+import categoryRoute from './routes/categoryRoute.js';
+import speakerRoute from './routes/speakerRoutes.js';
 
 const app = express();
 const port = 3000;
@@ -16,6 +17,7 @@ app.get('/', (req, res) => {
 
 app.use('/events', eventRoute);
 app.use('/categories', categoryRoute);
+app.use('/speakers', speakerRoute);
 
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
