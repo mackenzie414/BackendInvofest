@@ -3,7 +3,7 @@
 REST API backend untuk manajemen event **Invofest (Informatics Vocational Festival)** menggunakan Express + Prisma + Supabase.
 
 ## 🔗 Live API
-(backendinvofest-production-27db.up.railway.app)
+# backendinvofest-production-27db.up.railway.app
 
 ## 🛠️ Tech Stack
 - **Express.js** - Web Framework
